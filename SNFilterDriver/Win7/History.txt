@@ -1,0 +1,19 @@
+v1.0.0.7 (9/10/2018)
+1. Syn surprise remove and remove event behavior on win7/win10
+
+v1.0.0.6 (7/26/2018)
+1. Fix BSOD for surprise remove
+2.Fix competitor device can't work issue
+3.Optimization fast plug in/out behavior
+
+v1.0.0.5 (7/3/2018)
+1. Support multidevice
+2.Support multi control object
+
+v1.0.0.4 (5/29/2018)
+1. Support win10 rs3 or later
+
+v1.0.0.3 (3/26/2015)
+1. 修正.sys顯示的檔案訊息
+2. 修正與其他App一起使用時，會導致class filter driver失效。
+   原因是symbolic link沒有正確的create與delete。

@@ -1,0 +1,18 @@
+v2.0.0.4 (9/10/2018)
+1. Syn surprise remove and remove event behavior on win7/win10
+
+v2.0.0.3 (8/7/2018)
+1. Fix burn AP burning type from usb changed to xu when reset
+
+v2.0.0.2 (7/26/2018)
+1. Fix BSOD for surprise remove
+2.Fix competitor device can't work issue
+3.Optimization fast plug in/out behavior
+
+v2.0.0.1 (7/3/2018)
+1.Support multi device detections.
+2.Support multi control object.
+3.porting to vs2017.
+4.The filter driver use after RS3 version (Include RS3).
+5.Signed by Microsoft.
+

@@ -1,0 +1,57 @@
+[Version]
+Signature = $CHICAGO$
+Provider = %SX%
+CatalogFile.NT = SonixUVCFilter.cat
+DriverVer =  09/10/2018,1.0.0.7
+Class=Image
+ClassGuid={6BDD1FC6-810F-11D0-BEC7-08002BE2092F}
+DriverPackageType = ClassFilter
+DriverPackageDisplayName = %DESCRIPTION%
+
+[SourceDisksNames]
+1 = %INSTDISK%,,,
+
+[SourceDisksFiles]
+SonixUVCFilter.sys = 1,,
+
+[DestinationDirs]
+DefaultInstall.CopyFiles=12
+DefaultDestDir=12
+
+[DefaultInstall]
+DelFiles = DefaultInstall.CopyFiles
+Delreg   = DefaultInstall.DelReg
+
+[DefaultUninstall]
+DelFiles = DefaultInstall.CopyFiles
+Delreg   = DefaultInstall.DelReg
+
+[DefaultInstall.CopyFiles]
+SonixUVCFilter.sys
+
+[DefaultInstall.services]
+
+
+[DefaultInstall.AddReg]
+HKLM, SYSTEM\CurrentControlSet\Control\Class\{6bdd1fc6-810f-11d0-bec7-08002be2092f}\, LowerFilters, 0x00010008, SonixUVCFilter
+
+[DefaultInstall.DelReg]
+HKLM, SYSTEM\CurrentControlSet\Control\Class\{6bdd1fc6-810f-11d0-bec7-08002be2092f}\, LowerFilters, 0x00018002, SonixUVCFilter
+
+[FilterService]
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%10%\system32\drivers\SonixUVCFilter.sys
+
+[DefaultUninstall.services]
+DelService = SonixUVCFilter, 0x204
+
+;------------------------------------------------------------------------------
+;  String Definitions
+;------------------------------------------------------------------------------
+
+[Strings]
+SX = "Sonix"
+INSTDISK = "Sonix UVC Filter"
+DESCRIPTION = ""Sonix  UVC Filter"

@@ -1,0 +1,284 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SnCamDllTest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SnCamDllTest.ico"
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SnCamDllTest"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "SnCamDllTest, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_SNCAMDLLTEST_DIALOG DIALOGEX 0, 0, 412, 266
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SnCamDllTest"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SHOW,"Static",SS_BLACKRECT,16,16,259,175
+    PUSHBUTTON      "StartPreview",IDC_BUTTON1,290,18,50,14
+    PUSHBUTTON      "StartCapture",IDC_BUTTON6,342,18,50,14
+    PUSHBUTTON      "StopPreview",IDC_BUTTON2,290,33,50,14
+    PUSHBUTTON      "StopCapture",IDC_BUTTON7,341,33,50,14
+    PUSHBUTTON      "GetFormat",IDC_BUTTON10,342,58,50,14
+    EDITTEXT        IDC_EDIT2,298,73,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "SetFormat",IDC_BUTTON3,342,73,49,14
+    PUSHBUTTON      "GetFormat",IDC_BUTTON11,343,101,50,14
+    EDITTEXT        IDC_EDIT3,300,116,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "SetFormat",IDC_BUTTON4,343,116,50,14
+    PUSHBUTTON      "CaptureBuffer",IDC_BUTTON8,292,132,50,14
+    PUSHBUTTON      "TakePhoto",IDC_BUTTON5,343,132,50,14
+    COMBOBOX        IDC_COMBO2,290,161,104,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT4,293,176,31,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,326,178,16,10
+    PUSHBUTTON      "Set",IDC_BUTTON9,344,175,50,14
+    COMBOBOX        IDC_COMBO1,290,201,103,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT5,294,216,32,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,327,218,16,10
+    PUSHBUTTON      "Set",IDC_BUTTON12,343,215,50,14
+    CONTROL         "50Hz",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,307,244,32,10
+    CONTROL         "60Hz",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,348,244,32,10
+    EDITTEXT        IDC_EDIT1,16,193,259,59,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL,WS_EX_TRANSPARENT
+    GROUPBOX        "Start",IDC_STATIC,285,6,111,44
+    GROUPBOX        "Preview",IDC_STATIC,286,51,110,40
+    GROUPBOX        "Snap",IDC_STATIC,288,95,108,54
+    GROUPBOX        "Property",IDC_STATIC,288,152,108,40
+    GROUPBOX        "Control",IDC_STATIC,288,192,108,42
+    GROUPBOX        "PowerLine",IDC_STATIC,288,235,108,24
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,2
+ PRODUCTVERSION 1,0,0,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.2"
+            VALUE "InternalName", "SnCamDllTest.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "SnCamDllTest.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_SNCAMDLLTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 405
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SNCAMDLLTEST_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 11, 0
+0x7242, 0x6769, 0x7468, 0x656e, 0x7373, "\000" 
+    IDC_COMBO2, 0x403, 9, 0
+0x6f43, 0x746e, 0x6172, 0x7473, "\000" 
+    IDC_COMBO2, 0x403, 4, 0
+0x7548, 0x0065, 
+    IDC_COMBO2, 0x403, 11, 0
+0x6153, 0x7574, 0x6172, 0x6974, 0x6e6f, "\000" 
+    IDC_COMBO2, 0x403, 10, 0
+0x6853, 0x7261, 0x6e70, 0x7365, 0x0073, 
+    IDC_COMBO2, 0x403, 6, 0
+0x6147, 0x6d6d, 0x0061, 
+    IDC_COMBO2, 0x403, 12, 0
+0x6f43, 0x6f6c, 0x4572, 0x616e, 0x6c62, 0x0065, 
+    IDC_COMBO2, 0x403, 13, 0
+0x6857, 0x7469, 0x4265, 0x6c61, 0x6e61, 0x6563, "\000" 
+    IDC_COMBO2, 0x403, 22, 0
+0x6142, 0x6b63, 0x696c, 0x6867, 0x4374, 0x6d6f, 0x6570, 0x736e, 0x7461, 
+0x6f69, 0x006e, 
+    IDC_COMBO2, 0x403, 5, 0
+0x6147, 0x6e69, "\000" 
+    IDC_COMBO1, 0x403, 4, 0
+0x6150, 0x006e, 
+    IDC_COMBO1, 0x403, 5, 0
+0x6954, 0x746c, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f52, 0x6c6c, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f5a, 0x6d6f, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0x7845, 0x6f70, 0x7573, 0x6572, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x7249, 0x7369, "\000" 
+    IDC_COMBO1, 0x403, 6, 0
+0x6f46, 0x7563, 0x0073, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About SnCamDllTest..."
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\SnCamDllTest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
